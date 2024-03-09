@@ -7,6 +7,7 @@
     --color-secondary: #04B4E0;
     
     --color-background: #F2F7F9;
+    --color-background-scrollbar: #D2D2D3;
     --color-transparent: transparent;
 
     --color-icon: #B5B6B7;
@@ -360,7 +361,8 @@ body {
     position: relative;
 }
 
-.title__color {
+.title__color,
+.subtitle__color {
     color: var(--color-secondary);
 }
 
@@ -413,7 +415,7 @@ body {
 
 
 
-/*  *****  Servicios  ***** (compartido con reviews) - Estilos Compartidos */
+/*  *****  Servicios  ***** (compartido con reviews, about y otras secciones) - Estilos Compartidos */
 
 .about__services,
 .about__reviews,
@@ -428,7 +430,8 @@ body {
 .reviews__header,
 .clients__header,
 .prices__header,
-.extra__header {
+.extra__header,
+.resume__subheader {
     display: inline-block;
     /*padding-right: 1.2rem;*/
     margin-bottom: 2.5rem;
@@ -439,7 +442,8 @@ body {
 .reviews__title,
 .clients__title,
 .prices__title,
-.prices__title {
+.extra__title,
+.resume__subtitle {
     font-size: 2.1rem;
 }
 
@@ -447,7 +451,8 @@ body {
 .reviews__title::after,
 .clients__title::after,
 .prices__title::after,
-.extra__title::after {
+.extra__title::after,
+.resume__subtitle::after {
 
     content: "";
     position: absolute;
@@ -735,6 +740,154 @@ body {
     line-height: 5rem;
     color: var(--color-subtitle);
 }
+
+
+
+/*  **********  Estilos partes CURRICULUM IZQUIERDA **********  */
+
+
+.resume__container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.resume__left {
+    flex-basis:58%;
+    margin-right: 1.5rem;
+}
+
+.resume__timelines {
+    margin-bottom: 5rem;
+}
+
+.timelines__timeline {
+    position: relative;
+    width: 100%;
+    margin-bottom: 1.5rem;
+    display: flex;
+    flex-direction: row;
+}
+
+.timeline__header {
+    flex-basis: 30%;
+    text-align: right;
+    padding-right: 2.5rem;
+}
+
+.timeline_year {
+    max-width: 0.3rem 0px;
+    line-height: 1.9rem;
+    font-size: 1.4rem;
+}
+
+.timeline__company {
+    display: block;
+    font-size: 1.3rem;
+    font-weight: lighter;
+    color: var(--color-company);
+}
+
+.timeline__description {
+    width: 70%;
+    padding-left: 2.5rem;
+    padding-right: 1.5rem;
+}
+
+.timeline__title {
+    font-size: 1.6rem;
+    margin-bottom: 0.3rem;
+}
+
+.timeline__text {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+
+}
+
+.timeline__divider {
+    position: absolute;
+    top: 0;
+    left: 30%;
+    bottom: -18px;
+    width: 1px;
+    background-color: var(--color-background-scrollbar);
+}
+
+.timeline__divider::before {
+    content: "";
+    position: absolute;
+    margin-top: 0.4rem;
+    margin-left: -0.8rem;
+
+    width: 1.7rem;
+    height: 1.7rem;
+    background-color: var(--color-secondary);
+    border-radius: 10rem;
+    opacity: 0.25;
+}
+
+.timeline__divider::after {
+    content: "";
+    position: absolute;
+    margin-top: 0.8rem;
+    margin-left: -0.4rem;
+
+    width: 0.9rem;
+    height: 0.9rem;
+    background-color: var(--color-principal);
+    border-radius: 10rem;
+    border: 2px solid var(--color-secondary);
+    opacity: 1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*  **********  Estilos partes CURRICULUM DERECHA **********  */
+
+.resume__right {
+    flex-basis: 41%;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 /*  ******************************************************  */
