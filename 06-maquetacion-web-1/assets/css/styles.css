@@ -17,6 +17,8 @@
 
     --color-border-reviews: #E5E6E7;
     --color-company: #A5A6A7;
+
+    --color-background-certificate: #f5f5f5;
 }
 
 
@@ -811,6 +813,7 @@ body {
     left: 30%;
     bottom: -18px;
     width: 1px;
+    height: auto;
     background-color: var(--color-background-scrollbar);
 }
 
@@ -843,50 +846,130 @@ body {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*  **********  Estilos partes CURRICULUM DERECHA **********  */
 
 .resume__right {
     flex-basis: 41%;
+    padding: 0px 1.5rem;
 }
 
 
+.resume__skills {
+    width: 100%;
+    margin-bottom: 3rem;
+}
+
+.skills__title {
+    display: flex;
+    justify-content: space-between;
+}
+
+.skills__text {
+    font-size: 1.3rem;
+    line-height: 1.4rem;
+    margin-bottom: 0.4rem;
+}
+
+.skills__number {
+    font-size: 1.1rem;
+    line-height: 1.4rem;
+    margin-bottom: 0.4rem;
+    color: var(--color-subtitle);
+}
+
+.skills__progressbar {
+    height: 1rem;
+    border: 1px solid var(--color-secondary);
+    border-radius: 1rem;
+    background-color: var(--color-principal);
+    margin-bottom: 1.5rem;
+}
+
+.skills__percentage {
+    width: 40%;
+    height: 0.8rem;
+    background-color: var(--color-secondary);
+    border: 2px solid var(--color-principal);
+    border-radius: 1rem;
+}
+
+.skills__porcentage--p1 { width: 90%; }
+.skills__porcentage--p2 { width: 70%; }
+.skills__porcentage--p3 { width: 60%; }
+.skills__porcentage--p4 { width: 80%; }
+
+.skills__porcentage--p5 { width: 95%; }
+.skills__porcentage--p6 { width: 85%; }
+.skills__porcentage--p7 { width: 100%; }
+.skills__porcentage--p8 { width: 100%; }
+.skills__porcentage--p9 { width: 75%; }
 
 
+.knowledges__list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.knowledges__option {
+    padding: 0.4rem 1rem;
+    margin: 0.3rem;
+    font-size: 1.3rem;
+    background-color: var(--color-secondary);
+    border-radius: 0.3rem;
+    color: var(--color-principal);
+}
 
 
+.certificates__container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 3rem;
+}
 
+.certificates__certificate {
+    flex-basis: calc(50% - 1.5rem);
+    border: 2px solid var(--color-border-reviews);
+    border-radius: 0.8rem;
+    display: flex;
+    flex-direction: row;
+}
 
+.certificate__logo {
+    width: 15rem;
+    height: 100%;
+    background-color: var(--color-background-certificate);
+    padding: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+.certificate__image {
+    width: 100%;
+}
 
+.certificate__content {
+    padding: 2rem 2.5rem;
+}
+
+.certificate__title {
+    font-size: 1.6rem;
+    margin-bottom: 0.5rem;
+}
+
+.certificate__id {
+    display: block;
+    margin-bottom: 0.3rem;
+    font-size: 1.3rem;
+    color: var(--color-subtitle);
+}
+
+.certificate__date {
+    font-size: 1.2rem;
+    color: var(--color-subtitle);
+}
 
 
 
